@@ -3,7 +3,7 @@ import requests
 
 def test_users_endpoint_unauthorized(mocker):
     # Define the URL and parameters
-    url = "http://127.0.0.1:8000/users"
+    url = "http://127.0.0.1:8000/admin"
     params = {
         "username": "admin",
         "password": "admin"
@@ -25,7 +25,7 @@ def test_users_endpoint_unauthorized(mocker):
 
 def test_users_endpoint_authorized(mocker):
     # Define the URL and parameters
-    url = "http://127.0.0.1:8000/users"
+    url = "http://127.0.0.1:8000/admin"
     params = {
         "username": "admin",
         "password": "qwerty"
